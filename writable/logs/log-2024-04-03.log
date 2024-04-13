@@ -1,0 +1,125 @@
+CRITICAL - 2024-04-03 09:10:02 --> ParseError: syntax error, unexpected token "public"
+in APPPATH\Controllers\CompanyController.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\CI4-ADMIN\\app\\Controllers\\CompanyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CompanyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CompanyController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\CompanyController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:10:46 --> ParseError: syntax error, unexpected token "public"
+in APPPATH\Controllers\CompanyController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\CI4-ADMIN\\app\\Controllers\\CompanyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CompanyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CompanyController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\CompanyController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-03 09:11:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\CompanyController::$db is deprecated in APPPATH\Controllers\CompanyController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\CompanyController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-03 09:11:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\CompanyController::$db is deprecated in APPPATH\Controllers\CompanyController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\CompanyController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-03 09:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 09:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 09:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 09:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 09:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 09:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 10:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 10:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 10:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 11:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-03 11:35:57 --> ErrorException: Undefined variable $companies
+in APPPATH\Views\company_details.php on line 62.
+ 1 APPPATH\Views\company_details.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('company_details', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('company_details')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->company_details()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 11:36:12 --> ErrorException: Undefined variable $companies
+in APPPATH\Views\company_details.php on line 62.
+ 1 APPPATH\Views\company_details.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('company_details', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('company_details')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->company_details()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 11:37:18 --> ErrorException: Undefined variable $companies
+in APPPATH\Views\company_details.php on line 62.
+ 1 APPPATH\Views\company_details.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('company_details', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('company_details')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->company_details()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 11:37:22 --> ErrorException: Undefined variable $companies
+in APPPATH\Views\company_details.php on line 62.
+ 1 APPPATH\Views\company_details.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\CI4-ADMIN\\app\\Views\\company_details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('company_details', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('company_details')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->company_details()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-03 12:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 12:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 12:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 12:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 12:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 12:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 13:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 13:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-03 13:40:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_company_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_company_form.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('edit_company_form', [], true)
+ 3 APPPATH\Controllers\CompanyController.php(19): view('edit_company_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CompanyController->editCompany('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 13:42:07 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::updateCompany(), 0 passed in C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\CompanyController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CompanyController->updateCompany()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 13:49:16 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::updateCompany(), 0 passed in C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\CompanyController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CompanyController->updateCompany()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-03 14:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 14:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 14:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 14:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 14:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 14:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-03 14:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
