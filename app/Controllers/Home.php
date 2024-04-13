@@ -179,7 +179,10 @@ public function clients_list(): string
 {
     return view('clients_list');
 }
-    
+public function add_clients(): string
+{
+    return view('add_clients');
+}  
 
 
 

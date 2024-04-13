@@ -50,8 +50,9 @@ $routes->get('tables', 'Home::tables');
 
 $routes->get('clients_list', 'Home::clients_list');
 
+$routes->get('add_clients', 'Home::add_clients');
 
-
+$routes->post('add_clients', 'Home::add_clients');
 
 
 
