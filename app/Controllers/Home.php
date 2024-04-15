@@ -267,6 +267,11 @@ public function updateClient($clientId)
     }
 }
 
+public function project(): string
+    {
+        return view('project');
+    }
+
 
 
 
