@@ -31,5 +31,35 @@ public function getClientById($clientId)
     {
         return $this->db->table('clients')->where('client_id', $clientId)->get()->getRowArray();
     }
+    public function updateClient($clientId, $data)
+{
+    // Update the client's details in the 'clients' table
+    $this->db->table('clients')->where('client_id', $clientId)->update($data);
+}
+
+
+public function softDeleteClient($clientId)
+{
+    try {
+        // Perform the soft delete operation
+        $affectedRows = $this->db->table('clients')
+            ->where('client_id', $clientId)
+            ->update(['is_deleted' => 1]);
+
+        // Return true if at least one row is affected, indicating success
+        return $affectedRows > 0;
+    } catch (\Exception $e) {
+        // Log the error or handle it as needed
+        // You can also return a more specific error message if required
+        return false;
+    }
+}
+
+
+
+
+
+
+
 
 }

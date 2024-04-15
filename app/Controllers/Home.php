@@ -10,14 +10,19 @@ class Home extends BaseController
     {
         return view('index');
     }
+    protected $validation; // Add this property
+
     public function __construct()
     {
         // Load necessary helpers and libraries
         helper(['form', 'url', 'session']);
-       // $this->db = \Config\Database::connect();
-       $this->CompanyModel=new CompanyModel();
 
+        // Load the validation service
+        $this->validation = \Config\Services::validation(); // Add this line
+
+        $this->CompanyModel = new CompanyModel();
     }
+
 
 //-----------------------------------Register user-----------------------------------------------------------//
 
@@ -186,32 +191,55 @@ public function clients_list()
 }
 
 public function add_clients()
-    {
+{
+    // Check if the form is submitted
+    if ($this->request->getMethod() === 'post') {
+        // Define validation rules
+        $rules = [
+            'client_name' => 'required',
+            'client_email' => 'required|valid_email',
+            'client_location' => 'required',
+            'status' => 'required|in_list[active,inactive]',
+            'client_address' => 'required'
+        ];
+
+        // Set validation rules
+        $this->validation->setRules($rules);
+
+        // Validate the form input
+        if ($this->validation->withRequest($this->request)->run()) {
+            // Form validation passed, retrieve form input data
+            $userdata = [
+                'client_name' => $this->request->getPost('client_name'),
+                'client_email' => $this->request->getPost('client_email'),
+                'client_location' => $this->request->getPost('client_location'),
+                'status' => $this->request->getPost('status'),
+                'client_address' => $this->request->getPost('client_address'),
+            ];
+            
+            // Insert client data into the database
+            $inserted = $this->CompanyModel->insertClient($userdata);
+
+            if ($inserted) {
+                // Redirect to the clients list page if insertion is successful
+                return redirect()->to(site_url('clients_list'));
+            } else {
+                // Redirect back to the add clients form if insertion fails
+                return redirect()->to(site_url('add_clients'));
+            }
+        } else {
+            // Form validation failed, redirect back to the form with validation errors
+            return redirect()->back()->withInput()->with('validation_errors', $this->validation->getErrors());
+        }
+    } else {
+        // If accessed directly, load the add clients form view
         return view('add_clients');
     }
-
-public function addclients()
-{
-    if($this->request->getMethod()==='post')
-    {
-        $userdata=[
-            'client_name' => $this->request->getPost('client_name'),
-            'client_email' => $this->request->getPost('client_email'),
-            'client_location' => $this->request->getPost('client_location'),
-            'status' => $this->request->getPost('status'),
-            'client_address' => $this->request->getPost('client_address'),
-        ];
-        $inserted= $this->CompanyModel->insertClient($userdata);
-
-        if( $inserted)
-        {
-            return redirect()->to(site_url('clients_list'));
-        }
-        else{
-            return redirect()->to(site_url('add_clients'));
-        }
-    }
 }
+   
+
+    
+    
 
 public function change_status($clientId, $status)
 {
@@ -230,42 +258,77 @@ public function edit_client($clientId)
 
     // Check if the client data exists
     if ($clientData) {
-        // Load the view for editing client data and pass the client data to it
-        return view('edit_client', ['client' => $clientData]);
+        // Load the view for editing client data and pass the client data and clientId to it
+        return view('edit_client', ['client' => $clientData, 'clientId' => $clientId]);
     } else {
         // Client data not found, redirect to a 404 page or any appropriate page
         return redirect()->to(site_url('error404'));
     }
 }
 
+
 public function updateClient($clientId)
 {
-    // Validate the form input
+    // Define validation rules
     $rules = [
-        // Add your validation rules here
+        'client_name' => 'required',
+        'client_email' => 'required|valid_email',
+        'client_location' => 'required',
+        'status' => 'required|in_list[active,inactive]',
+        'client_address' => 'required'
     ];
 
+    // Validate the form input
     if ($this->validate($rules)) {
-        // Form validation passed, update the client record
+        // Form validation passed, retrieve form input data
         $data = [
-            // Retrieve form input data
+            'client_name' => $this->request->getPost('client_name'),
+            'client_email' => $this->request->getPost('client_email'),
+            'client_location' => $this->request->getPost('client_location'),
+            'status' => $this->request->getPost('status'),
+            'client_address' => $this->request->getPost('client_address'),
         ];
 
-        // Call your model method to update the client record
-        $success = $this->CompanyModel->updateClient($clientId, $data);
+        // Call the updateClient method in the CompanyModel to update the client's details
+        $this->CompanyModel->updateClient($clientId, $data);
 
-        if ($success) {
-            // Client updated successfully, redirect to a success page
-            return redirect()->to(site_url('clients_list'))->with('success_message', 'Client updated successfully.');
-        } else {
-            // Failed to update client, redirect back to the form with an error message
-            return redirect()->back()->withInput()->with('error_message', 'Failed to update client. Please try again.');
-        }
+        // Redirect to the clients list page with a success message
+        return redirect()->to(site_url('clients_list'))->with('success_message', 'Client updated successfully.');
     } else {
         // Form validation failed, redirect back to the form with validation errors
         return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
     }
 }
+
+public function delete_client($clientId)
+{
+    try {
+        // Attempt to soft delete the client
+        $softDeleted = $this->CompanyModel->softDeleteClient($clientId);
+
+        if ($softDeleted) {
+            // Client soft deleted successfully
+            return redirect()->to(site_url('clients_list'))->with('success_message', 'Client soft deleted successfully.');
+        } else {
+            // Failed to soft delete client
+            return redirect()->to(site_url('clients_list'))->with('error_message', 'Failed to soft delete client.');
+        }
+    } catch (\Exception $e) {
+        // Log the error or handle it as needed
+        log_message('error', 'Error deleting client: ' . $e->getMessage());
+        return redirect()->to(site_url('clients_list'))->with('error_message', 'An error occurred while deleting client.');
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 public function project(): string
     {
