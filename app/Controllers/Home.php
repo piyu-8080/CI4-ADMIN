@@ -14,7 +14,9 @@ class Home extends BaseController
     {
         // Load necessary helpers and libraries
         helper(['form', 'url', 'session']);
-        $this->db = \Config\Database::connect();
+       // $this->db = \Config\Database::connect();
+       $this->CompanyModel=new CompanyModel();
+
     }
 
 //-----------------------------------Register user-----------------------------------------------------------//
@@ -175,17 +177,95 @@ public function forgot_password(): string
 {
     return view('forgot_password');
 }
-public function clients_list(): string
+public function clients_list()
 {
-    return view('clients_list');
+  //  $companyModel = new \App\Models\CompanyModel(); // Load the CompanyModel
+    $data['clients'] =  $this->CompanyModel->getclient(); // Fetch all clients from the database
+
+    return view('clients_list', $data); // Pass the data to the view
 }
-public function add_clients(): string
+
+public function add_clients()
+    {
+        return view('add_clients');
+    }
+
+public function addclients()
 {
-    return view('add_clients');
-}  
+    if($this->request->getMethod()==='post')
+    {
+        $userdata=[
+            'client_name' => $this->request->getPost('client_name'),
+            'client_email' => $this->request->getPost('client_email'),
+            'client_location' => $this->request->getPost('client_location'),
+            'status' => $this->request->getPost('status'),
+            'client_address' => $this->request->getPost('client_address'),
+        ];
+        $inserted= $this->CompanyModel->insertClient($userdata);
+
+        if( $inserted)
+        {
+            return redirect()->to(site_url('clients_list'));
+        }
+        else{
+            return redirect()->to(site_url('add_clients'));
+        }
+    }
+}
+
+public function change_status($clientId, $status)
+{
+    // Call the updateStatus method in your CompanyModel
+    $this->CompanyModel->updateStatus($clientId, $status);
+
+    // Redirect back to the clients list page or any other appropriate page
+    return redirect()->to(site_url('clients_list'));
+}
 
 
+public function edit_client($clientId)
+{
+    // Fetch the client data from the database based on the client ID
+    $clientData = $this->CompanyModel->getClientById($clientId);
 
+    // Check if the client data exists
+    if ($clientData) {
+        // Load the view for editing client data and pass the client data to it
+        return view('edit_client', ['client' => $clientData]);
+    } else {
+        // Client data not found, redirect to a 404 page or any appropriate page
+        return redirect()->to(site_url('error404'));
+    }
+}
+
+public function updateClient($clientId)
+{
+    // Validate the form input
+    $rules = [
+        // Add your validation rules here
+    ];
+
+    if ($this->validate($rules)) {
+        // Form validation passed, update the client record
+        $data = [
+            // Retrieve form input data
+        ];
+
+        // Call your model method to update the client record
+        $success = $this->CompanyModel->updateClient($clientId, $data);
+
+        if ($success) {
+            // Client updated successfully, redirect to a success page
+            return redirect()->to(site_url('clients_list'))->with('success_message', 'Client updated successfully.');
+        } else {
+            // Failed to update client, redirect back to the form with an error message
+            return redirect()->back()->withInput()->with('error_message', 'Failed to update client. Please try again.');
+        }
+    } else {
+        // Form validation failed, redirect back to the form with validation errors
+        return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
+    }
+}
 
 
 

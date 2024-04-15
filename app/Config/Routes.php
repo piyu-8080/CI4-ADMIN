@@ -51,8 +51,19 @@ $routes->get('tables', 'Home::tables');
 $routes->get('clients_list', 'Home::clients_list');
 
 $routes->get('add_clients', 'Home::add_clients');
+$routes->post('addclients', 'Home::addclients');
 
-$routes->post('add_clients', 'Home::add_clients');
+$routes->get('change_status/(:num)/(:any)', 'Home::change_status/$1/$2');
+// Route for editing a client
+// Route for editing a client
+$routes->get('edit_client/(:num)', 'Home::editClient/$1');
+
+
+// For GET requests to view the update form
+$routes->get('update_client/(:num)', 'Home::editClient/$1');
+
+// For POST requests to update the client
+$routes->post('update_client/(:num)', 'Home::updateClient/$1');
 
 
 

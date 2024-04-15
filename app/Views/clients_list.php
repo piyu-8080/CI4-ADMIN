@@ -228,7 +228,10 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Registered Users</h1>
+                    <a href="<?php echo site_url()?>add_clients" class="btn my-2 btn-primary float-right">
+                                            Add Client
+                                        </a>
+                    <h1 class="h3 mb-2 text-gray-800">Clients List</h1>
                     <br>
 
                     <!-- DataTales Example -->
@@ -242,15 +245,45 @@
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>firstname</th>
-                                            <th>lastname</th>
-                                            <th>email</th>
+                                            <th>Client_Name</th>
+                                            <th>Client_Address</th>
+                                            <th>Client_Email</th>
+                                            <th>Client_Location</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                             
                                         </tr>
                                     </thead>
-                                    <tbody>
-    
+<!-- View - clients_list.php -->
+<tbody>
+    <?php foreach ($clients as $client) : ?>
+        <tr>
+            <td><?= $client['client_id'] ?></td>
+            <td><?= $client['client_name'] ?></td>
+            <td><?= $client['client_address'] ?></td>
+            <td><?= $client['client_email'] ?></td>
+            <td><?= $client['client_location'] ?></td>
+            <td>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-<?php echo $client['status'] == 'active' ? 'success' : 'danger' ?> dropdown-toggle" type="button" id="statusDropdown<?= $client['client_id'] ?>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo ucfirst($client['status']) ?>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="statusDropdown<?= $client['client_id'] ?>">
+                        <a class="dropdown-item" href="<?php echo site_url('change_status/' . $client['client_id'] . '/active') ?>">Active</a>
+                        <a class="dropdown-item" href="<?php echo site_url('change_status/' . $client['client_id'] . '/inactive') ?>">Inactive</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <a href="<?= site_url('edit_client/' . $client['client_id']) ?>" class="btn btn-sm btn-primary">
+                    <i class="fas fa-edit"></i> <!-- Edit icon -->
+                </a>
+                <a href="<?= site_url('delete_client/' . $client['client_id']) ?>" class="btn btn-sm btn-danger">
+                    <i class="fas fa-trash"></i> <!-- Delete icon -->
+                </a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
 </tbody>
                                 </table>
                             </div>

@@ -54,23 +54,23 @@
                             </div>
                             
 
-                            <form class="user" action="" method="post">
+                            <form class="user" action="<?php echo site_url();?>addclients" method="post">
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label for="clientname">Client Name</label>
-                                    <input type="text" class="form-control form-control-user1" id="clientname" name="clientname">
-                                    <?php if (session()->has('validation_errors') && session('validation_errors')['clientname'] ?? null) : ?>
+                                    <input type="text" class="form-control form-control-user1" id="client_name" name="client_name">
+                                    <?php if (session()->has('validation_errors') && session('validation_errors')['client_name'] ?? null) : ?>
                                         <div class="text-danger text-center">
-                                            <?= esc(session('validation_errors')['clientname']) ?>
+                                            <?= esc(session('validation_errors')['client_name']) ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="email">Client Email</label>
-                                    <input type="text" class="form-control form-control-user1" id="email" name="email">
-                                    <?php if (session()->has('validation_errors') && session('validation_errors')['email'] ?? null) : ?>
+                                    <input type="text" class="form-control form-control-user1" id="client_email" name="client_email">
+                                    <?php if (session()->has('validation_errors') && session('validation_errors')['client_email'] ?? null) : ?>
                                         <div class="text-danger text-center">
-                                            <?= esc(session('validation_errors')['email']) ?>
+                                            <?= esc(session('validation_errors')['client_email']) ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
@@ -79,10 +79,10 @@
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label for="clientlocation">Client Location</label>
-                                    <input type="text" class="form-control form-control-user1" name="clientlocation" id="clientlocation">
-                                    <?php if (session()->has('validation_errors') && session('validation_errors')['clientlocation'] ?? null) : ?>
+                                    <input type="text" class="form-control form-control-user1" name="client_location" id="client_location">
+                                    <?php if (session()->has('validation_errors') && session('validation_errors')['client_location'] ?? null) : ?>
                                         <div class="text-danger text-center">
-                                            <?= esc(session('validation_errors')['clientlocation']) ?>
+                                            <?= esc(session('validation_errors')['client_location']) ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
@@ -97,16 +97,16 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="address">Client Address</label>
-                                <textarea class="form-control form-control-user1" id="address" name="address"></textarea>
-                                <?php if (session()->has('validation_errors') && session('validation_errors')['address'] ?? null) : ?>
+                                <label for="client_address">Client Address</label>
+                                <textarea class="form-control form-control-user1" id="client_address" name="client_address"></textarea>
+                                <?php if (session()->has('validation_errors') && session('validation_errors')['client_address'] ?? null) : ?>
                                     <div class="text-danger text-center">
-                                        <?= esc(session('validation_errors')['address']) ?>
+                                        <?= esc(session('validation_errors')['client_address']) ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
                             <div class="center text-center">
-                                <input type="submit" class="btn btn-center btn-primary btn-user1" name="companyDetails" value="Add Client Details">
+                                <input type="submit" class="btn btn-center btn-primary btn-user1" name="clientDetails" value="Add Client Details">
                             </div>
 
                             </form>
