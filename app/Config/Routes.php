@@ -49,6 +49,7 @@ $routes->get('forgot_password', 'Home::forgot_password');
 $routes->get('tables', 'Home::tables');
 
 $routes->get('clients_list', 'Home::clients_list');
+$routes->get('project', 'Home::project');
 
 $routes->get('add_clients', 'Home::add_clients');
 $routes->post('addclients', 'Home::addclients');
