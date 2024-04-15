@@ -56,7 +56,7 @@ $routes->post('addclients', 'Home::addclients');
 $routes->get('change_status/(:num)/(:any)', 'Home::change_status/$1/$2');
 // Route for editing a client
 // Route for editing a client
-$routes->get('edit_client/(:num)', 'Home::editClient/$1');
+$routes->get('edit_client/(:num)', 'Home::edit_client/$1');
 
 
 // For GET requests to view the update form
