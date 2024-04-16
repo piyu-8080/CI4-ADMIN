@@ -29,11 +29,11 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <a href="<?php echo site_url()?>add_clients" class="btn my-2 btn-primary float-right">
-    Add Client
+                    <a href="<?php echo site_url()?>add_projects" class="btn my-2 btn-primary float-right">
+    Add Projects
 </a>
 
-                    <h1 class="h3 mb-2 text-gray-800">Clients List</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Projects List</h1>
                     <br>
 
                     <!-- DataTales Example -->

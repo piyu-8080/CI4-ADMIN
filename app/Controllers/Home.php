@@ -342,6 +342,11 @@ public function project(): string
         return view('project');
     }
 
+    public function add_projects(): string
+    {
+        return view('add_projects');
+    }
+
 
 
 
