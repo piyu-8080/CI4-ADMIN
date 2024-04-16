@@ -1,0 +1,895 @@
+WARNING - 2024-04-16 06:07:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:07:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:08:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:08:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:08:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:08:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:19:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 06:19:57 --> ErrorException: Undefined property: App\Controllers\Home::$companyModel
+in APPPATH\Controllers\Home.php on line 306.
+ 1 APPPATH\Controllers\Home.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$companyModel', 'C:\\wamp64\\www\\CI4-ADMIN\\app\\Controllers\\Home.php', 306)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->delete_client('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:21:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 06:21:09 --> BadMethodCallException: Call to undefined method App\Models\CompanyModel::getUserById_
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(306): CodeIgniter\Model->__call('getUserById_', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->delete_client('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:22:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:22:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:22:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:23:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:23:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:24:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:24:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:26:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:26:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:26:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:26:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:26:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:26:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:26:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:27:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:28:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:28:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:28:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:28:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:30:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:30:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:31:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:31:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:31:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:31:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:31:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:31:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:32:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:32:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:32:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:32:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:32:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:32:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:32:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:32:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:47:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:47:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:48:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:48:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:48:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:48:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:48:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:48:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:48:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 06:51:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 06:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 06:51:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:03:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:03:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:04:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:04:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:07:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:07:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:07:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:07:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:07:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:07:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:07:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 07:10:03 --> ErrorException: Cannot redeclare App\Models\CompanyModel::getclient()
+in APPPATH\Models\CompanyModel.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+WARNING - 2024-04-16 07:10:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:11:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:12:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:12:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 07:13:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 07:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 07:13:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 08:03:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-16 08:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-16 08:03:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 08:03:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 08:06:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 08:06:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 08:36:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 08:37:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-16 09:33:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
