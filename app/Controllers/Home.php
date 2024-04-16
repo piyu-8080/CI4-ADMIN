@@ -299,6 +299,10 @@ public function updateClient($clientId)
         return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
     }
 }
+
+
+
+
 public function delete_client($clientId)
 {
     try {
