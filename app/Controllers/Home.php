@@ -299,28 +299,35 @@ public function updateClient($clientId)
         return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
     }
 }
-
 public function delete_client($clientId)
 {
     try {
-        // Attempt to soft delete the client
-        $softDeleted = $this->CompanyModel->softDeleteClient($clientId);
+        // Check if the client exists
+        $clientDetails = $this->CompanyModel->getClientById($clientId);
+        
+        // If the client doesn't exist, show an error message
+        if (!$clientDetails) {
+            return redirect()->to('/clients_list')->with('error', 'Client not found');
+        }
 
-        if ($softDeleted) {
-            // Client soft deleted successfully
-            return redirect()->to(site_url('clients_list'))->with('success_message', 'Client soft deleted successfully.');
+        // Soft delete the client
+        $success = $this->CompanyModel->deleteClient($clientId);
+
+        if ($success) {
+            // Redirect to the clients list page with a success message
+            return redirect()->to('/clients_list')->with('success', 'Client deleted successfully');
         } else {
-            // Failed to soft delete client
-            return redirect()->to(site_url('clients_list'))->with('error_message', 'Failed to soft delete client.');
+            // Redirect back to the clients list page with an error message
+            return redirect()->back()->with('error', 'Failed to delete client');
         }
     } catch (\Exception $e) {
-        // Log the error or handle it as needed
+        // Log the error
         log_message('error', 'Error deleting client: ' . $e->getMessage());
-        return redirect()->to(site_url('clients_list'))->with('error_message', 'An error occurred while deleting client.');
+
+        // Redirect back with an error message
+        return redirect()->back()->with('error', 'An error occurred while deleting the client');
     }
 }
-
-
 
 
 

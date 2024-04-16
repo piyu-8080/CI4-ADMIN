@@ -16,10 +16,10 @@ class CompanyModel extends Model{
         // Insert data into the client table
         return $this->db->table('clients')->insert($data);
     }
-    public function getclient()
+   /*  public function getclient()
     {
         return $this->db->table('clients')->get()->getResultArray();
-    }
+    }*/
     
     public function updateStatus($clientId, $status)
 {
@@ -37,23 +37,28 @@ public function getClientById($clientId)
     $this->db->table('clients')->where('client_id', $clientId)->update($data);
 }
 
-
-public function softDeleteClient($clientId)
+/*
+public function deleteClient($clientId)
 {
-    try {
-        // Perform the soft delete operation
-        $affectedRows = $this->db->table('clients')
-            ->where('client_id', $clientId)
-            ->update(['is_deleted' => 1]);
-
-        // Return true if at least one row is affected, indicating success
-        return $affectedRows > 0;
-    } catch (\Exception $e) {
-        // Log the error or handle it as needed
-        // You can also return a more specific error message if required
-        return false;
-    }
+    // Delete the client from the 'clients' table
+    return $this->db->table('clients')->where('client_id', $clientId)->delete();
+}*/
+public function deleteClient($clientId)
+{
+    // Update the 'is_deleted' field to mark the client as deleted
+    $data = ['is_deleted' => 1];
+    
+    // Perform the update operation
+    return $this->db->table('clients')->where('client_id', $clientId)->update($data);
 }
+public function getclient()
+{
+    return $this->db->table('clients')
+                    ->where('is_deleted', 0) // Filter out deleted clients
+                    ->get()
+                    ->getResultArray();
+}
+
 
 
 

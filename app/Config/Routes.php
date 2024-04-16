@@ -64,7 +64,7 @@ $routes->get('edit_client/(:num)', 'Home::edit_client/$1');
 // In routes.php or similar routing file
 
 
-$routes->match(['get', 'delete'], 'delete_client/(:num)', 'Home::delete_client/$1');
+$routes->match(['get', 'post'], 'delete_client/(:num)', 'Home::delete_client/$1');
 
 
 // For GET requests to view the update form
