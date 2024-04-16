@@ -49,12 +49,15 @@ $routes->get('forgot_password', 'Home::forgot_password');
 $routes->get('tables', 'Home::tables');
 
 $routes->get('clients_list', 'Home::clients_list');
-$routes->get('project', 'Home::project');
+$routes->get('projects_list', 'Home::projects_list');
 
 $routes->get('add_clients', 'Home::add_clients');
-
-
 $routes->post('addclients', 'Home::add_clients');
+
+
+$routes->get('add_projects', 'Home::add_projects');
+
+$routes->post('add_projects', 'Home::add_projects');
 
 
 $routes->get('change_status/(:num)/(:any)', 'Home::change_status/$1/$2');

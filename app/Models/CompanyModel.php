@@ -11,6 +11,13 @@ class CompanyModel extends Model{
         'website',
         'address'
     ];
+    public function __construct()
+    {
+        parent::__construct();
+    
+        // Load the database connection
+        $this->db = \Config\Database::connect();
+    }
     public function insertClient($data)
     {
         // Insert data into the client table
@@ -57,6 +64,30 @@ public function getclient()
                     ->where('is_deleted', 0) // Filter out deleted clients
                     ->get()
                     ->getResultArray();
+}
+
+public function insertProject($data)
+{
+    // Check if the 'client_id' key exists in the provided data
+    if (!isset($data['client_id'])) {
+        // If 'client_id' key is not provided, return false or throw an error
+        return false; // You can also throw an exception here if you want
+    }
+
+    // Insert data into the projects table
+    return $this->db->table('projects')->insert($data);
+}
+
+public function getProjects()
+{
+    // Fetch projects from the projects table along with client name
+    $projects = $this->db->table('projects')
+                        ->select('projects.*, clients.client_name') // Select all columns from projects and client_name from clients
+                        ->join('clients', 'clients.client_id = projects.client_id')
+                        ->get()
+                        ->getResultArray();
+
+    return $projects;
 }
 
 

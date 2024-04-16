@@ -341,12 +341,61 @@ public function delete_client($clientId)
 
 
 
-public function project(): string
+public function projects_list(): string
     {
-        return view('project');
+        return view('projects_list');
     }
 
-
+    public function add_projects()
+    {
+        // Fetch clients data from the database
+        $clients = $this->CompanyModel->getclient();
+        
+        // Check if the form is submitted
+        if ($this->request->getMethod() === 'post') {
+            // Define validation rules
+            $rules = [
+                'project_name' => 'required',
+                'client_id' => 'required', // Ensure client_id is required
+                'project_start_date' => 'required|valid_date',
+                'status' => 'required|in_list[active,inactive]',
+                // Add more validation rules as needed
+            ];
+        
+            // Set validation rules
+            $this->validation->setRules($rules);
+        
+            // Validate the form input
+            if ($this->validation->withRequest($this->request)->run()) {
+                // Form validation passed, retrieve form input data
+                $data = [
+                    'project_name' => $this->request->getPost('project_name'),
+                    'client_id' => $this->request->getPost('client_id'), // Get client ID
+                    'project_start_date' => $this->request->getPost('project_start_date'),
+                    'status' => $this->request->getPost('status'),
+                    // Retrieve more form input data as needed
+                ];
+        
+                // Insert project data into the database
+                $inserted = $this->CompanyModel->insertProject($data);
+        
+                if ($inserted) {
+                    // Redirect to the projects list page if insertion is successful
+                    return redirect()->to(site_url('projects_list'));
+                } else {
+                    // Redirect back to the add projects form if insertion fails
+                    return redirect()->to(site_url('add_projects'));
+                }
+            } else {
+                // Form validation failed, redirect back to the form with validation errors
+                return redirect()->back()->withInput()->with('validation_errors', $this->validation->getErrors());
+            }
+        } else {
+            // If accessed directly, load the add projects form view with clients data
+            return view('add_projects', ['clients' => $clients]);
+        }
+    }
+    
 
 
 
