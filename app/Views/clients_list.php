@@ -229,8 +229,9 @@
 
                     <!-- Page Heading -->
                     <a href="<?php echo site_url()?>add_clients" class="btn my-2 btn-primary float-right">
-                                            Add Client
-                                        </a>
+    Add Client
+</a>
+
                     <h1 class="h3 mb-2 text-gray-800">Clients List</h1>
                     <br>
 
@@ -278,9 +279,10 @@
                 <a href="<?= site_url('edit_client/' . $client['client_id']) ?>" class="btn btn-sm btn-primary">
                     <i class="fas fa-edit"></i> <!-- Edit icon -->
                 </a>
-                <a href="<?= site_url('delete_client/' . $client['client_id']) ?>" class="btn btn-sm btn-danger">
-                    <i class="fas fa-trash"></i> <!-- Delete icon -->
-                </a>
+                <a href="<?= site_url('delete_client/' . $client['client_id']) ?>" class="btn btn-sm btn-danger delete-client">
+    <i class="fas fa-trash"></i> <!-- Delete icon -->
+</a>
+
             </td>
         </tr>
     <?php endforeach; ?>
@@ -336,7 +338,7 @@
             </div>
         </div>
     </div>
-
+  
     <?php include('footer_script.php');?>
 
 </body>
