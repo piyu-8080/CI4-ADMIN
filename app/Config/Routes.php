@@ -76,8 +76,15 @@ $routes->match(['get', 'post'], 'delete_client/(:num)', 'Home::delete_client/$1'
 $routes->post('update_client/(:num)', 'Home::updateClient/$1');
 
 
+// Edit project form
+$routes->get('edit_project/(:num)', 'Home::edit_project/$1');
+
+// Update project
+$routes->post('update_project/(:num)', 'Home::update_project/$1');
 
 
+
+$routes->get('delete_project/(:num)', 'Home::delete_project/$1');
 
 
 

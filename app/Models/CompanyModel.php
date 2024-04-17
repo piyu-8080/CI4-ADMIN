@@ -78,22 +78,40 @@ public function insertProject($data)
     return $this->db->table('projects')->insert($data);
 }
 
+// Get all projects with client name
 public function getProjects()
 {
-    // Fetch projects from the projects table along with client name
-    $projects = $this->db->table('projects')
-                        ->select('projects.*, clients.client_name') // Select all columns from projects and client_name from clients
-                        ->join('clients', 'clients.client_id = projects.client_id')
-                        ->get()
-                        ->getResultArray();
-
-    return $projects;
+    return $this->db->table('projects')
+                    ->select('projects.*, clients.client_name')
+                    ->join('clients', 'clients.client_id = projects.client_id')
+                    ->get()
+                    ->getResultArray();
 }
 
+// Get project details by ID
+public function getProjectById($projectId)
+{
+    return $this->db->table('projects')->where('project_id', $projectId)->get()->getRowArray();
+}
 
+// Update project details
+public function updateProject($projectId, $data)
+{
+    return $this->db->table('projects')->where('project_id', $projectId)->update($data);
+}
 
+public function getClients()
+{
+    return $this->db->table('clients')
+                    ->where('is_deleted', 0) // Filter out deleted clients
+                    ->get()
+                    ->getResultArray();
+}
 
-
+public function deleteProject($projectId)
+{
+    return $this->db->table('projects')->where('project_id', $projectId)->delete();
+}
 
 
 

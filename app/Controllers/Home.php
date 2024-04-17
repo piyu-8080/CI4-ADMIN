@@ -342,9 +342,17 @@ public function delete_client($clientId)
 
 
 public function projects_list(): string
-    {
-        return view('projects_list');
-    }
+{
+    // Load CompanyModel
+    $companyModel = new CompanyModel();
+
+    // Fetch all projects from the database
+    $data['projects'] = $companyModel->getProjects();
+
+    // Pass the fetched data to the view
+    return view('projects_list', $data);
+}
+
 
     public function add_projects()
     {
@@ -397,9 +405,66 @@ public function projects_list(): string
     }
     
 
+    public function edit_project($projectId)
+    {
+        // Load the CompanyModel
+        $companyModel = new \App\Models\CompanyModel();
+    
+        // Get the project details by ID
+        $project = $companyModel->getProjectById($projectId);
+    
+        // Check if the project data exists
+        if ($project) {
+            // Get the clients list
+            $clients = $companyModel->getClients();
+    
+            // Load the edit project view and pass the project data and clients list
+            return view('edit_project', ['project' => $project, 'clients' => $clients]);
+        } else {
+            // Project data not found, redirect to an error page or appropriate action
+            return redirect()->to(site_url('error404'));
+        }
+    }
+    
 
+    public function update_project($projectId)
+    {
+        $rules = [
+            'project_name' => 'required',
+            'client_id' => 'required',
+            // Add more validation rules as needed
+        ];
 
+        if ($this->validate($rules)) {
+            $data = [
+                'project_name' => $this->request->getPost('project_name'),
+                'client_id' => $this->request->getPost('client_id'),
+                // Retrieve more form input data as needed
+            ];
 
+            $this->CompanyModel->updateProject($projectId, $data);
+
+            return redirect()->to(site_url('projects_list'))->with('success_message', 'Project updated successfully.');
+        } else {
+            return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
+        }
+    }
+
+    public function delete_project($projectId)
+{
+    $companyModel = new \App\Models\CompanyModel();
+    $deleted = $companyModel->deleteProject($projectId);
+    
+    if ($deleted) {
+        // Project deleted successfully
+        return redirect()->to(site_url('projects_list'))->with('success', 'Project deleted successfully');
+    } else {
+        // Failed to delete project
+        return redirect()->to(site_url('projects_list'))->with('error', 'Failed to delete project');
+    }
+}
+
+    
 
 
 
