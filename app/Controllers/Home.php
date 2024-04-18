@@ -486,10 +486,18 @@ public function change_status1($projectId, $status)
     return redirect()->to(site_url('projects_list'));
 }
 
+//-----------------------------------SEO projects list-----------------------------------------------------------//
+
+public function SEO_projects()
+{
+    return view('SEO_projects');
+}
 
 
-
-
+public function add_seo_projects()
+{
+    return view('add_seo_projects');
+}
 
 
 
