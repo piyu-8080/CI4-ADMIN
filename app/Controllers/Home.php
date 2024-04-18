@@ -176,12 +176,13 @@ class Home extends BaseController
     return view('change_password');
 }
 
-
-
 public function forgot_password(): string
 {
     return view('forgot_password');
 }
+
+//-------------------------------------------------Display list of Clients-----------------------------------------------------------//
+
 public function clients_list()
 {
   //  $companyModel = new \App\Models\CompanyModel(); // Load the CompanyModel
@@ -189,6 +190,9 @@ public function clients_list()
 
     return view('clients_list', $data); // Pass the data to the view
 }
+
+
+//------------------------------------------Add Clients data in form-----------------------------------------------------------------//
 
 public function add_clients()
 {
@@ -238,7 +242,7 @@ public function add_clients()
 }
    
 
-    
+//-------------------------------------------Change status of clients list table-----------------------------------------------------------//
     
 
 public function change_status($clientId, $status)
@@ -250,6 +254,7 @@ public function change_status($clientId, $status)
     return redirect()->to(site_url('clients_list'));
 }
 
+//---------------------------------------------------------Edit clients information -----------------------------------------------------------//
 
 public function edit_client($clientId)
 {
@@ -266,6 +271,7 @@ public function edit_client($clientId)
     }
 }
 
+//-----------------------------------------Update clients information-----------------------------------------------------------//
 
 public function updateClient($clientId)
 {
@@ -302,6 +308,7 @@ public function updateClient($clientId)
 
 
 
+//--------------------------------------------Delete Client from clients list-----------------------------------------------------------//
 
 public function delete_client($clientId)
 {
@@ -333,6 +340,7 @@ public function delete_client($clientId)
     }
 }
 
+//---------------------------------------------------Display Project list------------------------------------------------------------//
 
 
 public function projects_list(): string
@@ -347,6 +355,7 @@ public function projects_list(): string
     return view('projects_list', $data);
 }
 
+//-------------------------------------------Add project of specific clients-----------------------------------------------------------//
 
     public function add_projects()
     {
@@ -398,6 +407,7 @@ public function projects_list(): string
         }
     }
     
+//--------------------------------------Edit project information of clients-----------------------------------------------------------//
 
     public function edit_project($projectId)
     {
@@ -420,6 +430,7 @@ public function projects_list(): string
         }
     }
     
+//------------------------------------------update project of clients-----------------------------------------------------------//
 
     public function update_project($projectId)
     {
@@ -448,6 +459,8 @@ public function projects_list(): string
         }
     }
 
+//--------------------------------------Delete project of specific clients-----------------------------------------------------------//
+   
     public function delete_project($projectId)
 {
     $companyModel = new \App\Models\CompanyModel();
@@ -461,6 +474,8 @@ public function projects_list(): string
         return redirect()->to(site_url('projects_list'))->with('error', 'Failed to delete project');
     }
 }
+
+//-----------------------------------Change status of project list table-----------------------------------------------------------//
 
 public function change_status1($projectId, $status)
 {

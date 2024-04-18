@@ -18,6 +18,8 @@ class CompanyModel extends Model{
         // Load the database connection
         $this->db = \Config\Database::connect();
     }
+//--------------------------------------Insert data in clients table-----------------------------------------------------------//
+
     public function insertClient($data)
     {
         // Insert data into the client table
@@ -27,7 +29,10 @@ class CompanyModel extends Model{
     {
         return $this->db->table('clients')->get()->getResultArray();
     }*/
+
     
+//-----------------------------------update status of clients list table-----------------------------------------------------------//
+
     public function updateStatus($clientId, $status)
 {
     // Update the status in the 'clients' table
@@ -51,6 +56,10 @@ public function deleteClient($clientId)
     // Delete the client from the 'clients' table
     return $this->db->table('clients')->where('client_id', $clientId)->delete();
 }*/
+
+
+//-----------------------------------Deleted client from client list -----------------------------------------------------------//
+
 public function deleteClient($clientId)
 {
     // Update the 'is_deleted' field to mark the client as deleted
@@ -59,6 +68,9 @@ public function deleteClient($clientId)
     // Perform the update operation
     return $this->db->table('clients')->where('client_id', $clientId)->update($data);
 }
+
+//-----------------------------------Fetch data from database clients table-----------------------------------------------------------//
+
 public function getclient()
 {
     return $this->db->table('clients')
@@ -66,6 +78,8 @@ public function getclient()
                     ->get()
                     ->getResultArray();
 }
+
+//-----------------------------------Insert project of specific client-----------------------------------------------------------//
 
 public function insertProject($data)
 {
@@ -78,6 +92,9 @@ public function insertProject($data)
     // Insert data into the projects table
     return $this->db->table('projects')->insert($data);
 }
+
+
+//-------------------------------------fetch data from projects table of database-----------------------------------------------------------//
 
 // Get all projects with client name
 public function getProjects()
@@ -95,11 +112,14 @@ public function getProjectById($projectId)
     return $this->db->table('projects')->where('project_id', $projectId)->get()->getRowArray();
 }
 
-// Update project details
+
+//-----------------------------------Update project details-----------------------------------------------------------//
+
 public function updateProject($projectId, $data)
 {
     return $this->db->table('projects')->where('project_id', $projectId)->update($data);
 }
+
 
 public function getClients()
 {
@@ -109,10 +129,15 @@ public function getClients()
                     ->getResultArray();
 }
 
+//-----------------------------------Delete project of clients-----------------------------------------------------------//
+
 public function deleteProject($projectId)
 {
     return $this->db->table('projects')->where('project_id', $projectId)->delete();
 }
+
+//-----------------------------------Update status of project list table-----------------------------------------------------------//
+
 public function updateStatus1($projectId, $status)
 {
     // Update the status in the 'projects' table

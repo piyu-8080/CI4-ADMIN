@@ -48,45 +48,61 @@ $routes->get('forgot_password', 'Home::forgot_password');
 
 $routes->get('tables', 'Home::tables');
 
+
+
+
+
+
+//-------------------------------------------------------Get client list-------------------------------------------------------//
 $routes->get('clients_list', 'Home::clients_list');
+
+//-------------------Get project list-------------------------------------//
+
 $routes->get('projects_list', 'Home::projects_list');
+
+//----------------------get post Add clients form-------------------------------------//
 
 $routes->get('add_clients', 'Home::add_clients');
 $routes->post('addclients', 'Home::add_clients');
 
+//-------------------Get post add project form-------------------------------------//
 
 $routes->get('add_projects', 'Home::add_projects');
-
 $routes->post('add_projects', 'Home::add_projects');
 
+//-------------------Change status of client list-------------------------------------//
 
 $routes->get('change_status/(:num)/(:any)', 'Home::change_status/$1/$2');
-// Route for editing a client
-// Route for editing a client
-$routes->get('edit_client/(:num)', 'Home::edit_client/$1');
-// In routes.php or similar routing file
 
+//---------------------Edit client form-------------------------------------//
+
+$routes->get('edit_client/(:num)', 'Home::edit_client/$1');
+
+//-------------------Delete client list-------------------------------------//
 
 $routes->match(['get', 'post'], 'delete_client/(:num)', 'Home::delete_client/$1');
 
+//-------------------update client list-------------------------------------//
 
-// For GET requests to view the update form
-
-// For POST requests to update the client
 $routes->post('update_client/(:num)', 'Home::updateClient/$1');
 
+//-------------------update get post of project list-------------------------------------//
 
-// Edit project form
 $routes->get('edit_project/(:num)', 'Home::edit_project/$1');
-
-// Update project
 $routes->post('update_project/(:num)', 'Home::update_project/$1');
 
-
+//---------------------Delete project list-------------------------------------//
 
 $routes->get('delete_project/(:num)', 'Home::delete_project/$1');
 
+//-------------------------change status of project list -------------------------------------//
+
 $routes->get('change_status1/(:num)/(:any)', 'Home::change_status1/$1/$2');
+
+
+
+
+
 
 
 
