@@ -86,6 +86,7 @@ $routes->post('update_project/(:num)', 'Home::update_project/$1');
 
 $routes->get('delete_project/(:num)', 'Home::delete_project/$1');
 
+$routes->get('change_status1/(:num)/(:any)', 'Home::change_status1/$1/$2');
 
 
 

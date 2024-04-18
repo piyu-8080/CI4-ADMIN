@@ -44,6 +44,7 @@ public function getClientById($clientId)
     $this->db->table('clients')->where('client_id', $clientId)->update($data);
 }
 
+
 /*
 public function deleteClient($clientId)
 {
@@ -112,7 +113,12 @@ public function deleteProject($projectId)
 {
     return $this->db->table('projects')->where('project_id', $projectId)->delete();
 }
-
+public function updateStatus1($projectId, $status)
+{
+    // Update the status in the 'projects' table
+    $data = ['status' => $status]; // Data to be updated
+    $this->db->table('projects')->where('project_id', $projectId)->update($data);
+}
 
 
 

@@ -335,12 +335,6 @@ public function delete_client($clientId)
 
 
 
-
-
-
-
-
-
 public function projects_list(): string
 {
     // Load CompanyModel
@@ -432,6 +426,8 @@ public function projects_list(): string
         $rules = [
             'project_name' => 'required',
             'client_id' => 'required',
+            'project_start_date' => 'required|valid_date',
+            'status' => 'required|in_list[active,inactive]'
             // Add more validation rules as needed
         ];
 
@@ -439,6 +435,8 @@ public function projects_list(): string
             $data = [
                 'project_name' => $this->request->getPost('project_name'),
                 'client_id' => $this->request->getPost('client_id'),
+                'project_start_date' => $this->request->getPost('project_start_date'),
+                'status' => $this->request->getPost('status'),
                 // Retrieve more form input data as needed
             ];
 
@@ -464,7 +462,14 @@ public function projects_list(): string
     }
 }
 
-    
+public function change_status1($projectId, $status)
+{
+    // Call the updateStatus method in your CompanyModel
+    $this->CompanyModel->updateStatus1($projectId, $status);
+
+    // Redirect back to the projects list page or any other appropriate page
+    return redirect()->to(site_url('projects_list'));
+}
 
 
 
