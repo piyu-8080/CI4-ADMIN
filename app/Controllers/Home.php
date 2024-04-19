@@ -350,7 +350,9 @@ public function projects_list(): string
 
     // Fetch all projects from the database
     $data['projects'] = $companyModel->getProjects();
-
+    $data['list_project'] = $companyModel->get_client_data();
+   // print_r($list_data); die;
+    
     // Pass the fetched data to the view
     return view('projects_list', $data);
 }
@@ -490,14 +492,76 @@ public function change_status1($projectId, $status)
 
 public function SEO_projects()
 {
-    return view('SEO_projects');
+    // Load the CompanyModel
+    $companyModel = new \App\Models\CompanyModel();
+
+    // Fetch SEO projects data from the database
+    $data['projects'] = $companyModel->getSEOProjects();
+
+    // Load the SEO_projects view with the fetched data
+    return view('SEO_projects', $data);
 }
+
 
 
 public function add_seo_projects()
 {
-    return view('add_seo_projects');
+    // Load the CompanyModel
+    $companyModel = new \App\Models\CompanyModel();
+
+    // Fetch projects data from the database
+    $projects = $companyModel->getProjects(); // Assuming you have a method to fetch projects
+
+    // Check if the form is submitted
+    if ($this->request->getMethod() === 'post') {
+        // Define validation rules
+        $rules = [
+            'project_id' => 'required', 
+            'project_name' => 'required',// Assuming project_id is required
+            'seo_title' => 'required',
+            'seo_description' => 'required',
+            'description' => 'required',
+            'progress' => 'required|in_list[0,1,2]' // Assuming progress is required and should be one of 0, 1, or 2
+            // Add more validation rules as needed
+        ];
+    
+        // Set validation rules
+        $this->validation->setRules($rules);
+    
+        // Validate the form input
+        if ($this->validation->withRequest($this->request)->run()) {
+            // Form validation passed, retrieve form input data
+            $data = [
+                'project_id' => $this->request->getPost('project_id'),
+                'project_name' => $this->request->getPost('project_name'),
+                'seo_title' => $this->request->getPost('seo_title'),
+                'seo_description' => $this->request->getPost('seo_description'),
+                'description' => $this->request->getPost('description'),
+                'progress' => $this->request->getPost('progress'),
+                // Retrieve more form input data as needed
+            ];
+        
+            // Insert SEO project data into the database
+            $inserted = $companyModel->insertSEOProject($data); // Assuming you have a method to insert SEO projects
+    
+            if ($inserted) {
+                // Redirect to the SEO projects list page if insertion is successful
+                return redirect()->to(site_url('SEO_projects'));
+            } else {
+                // Redirect back to the add SEO projects form if insertion fails
+                return redirect()->to(site_url('add_seo_projects'));
+            }
+        } else {
+            // Form validation failed, redirect back to the form with validation errors
+            return redirect()->back()->withInput()->with('validation_errors', $this->validation->getErrors());
+        }
+    } else {
+        // If accessed directly, load the add SEO projects form view with projects data
+        return view('add_seo_projects', ['projects' => $projects]);
+    }
 }
+
+
 
 
 

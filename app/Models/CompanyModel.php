@@ -145,6 +145,33 @@ public function updateStatus1($projectId, $status)
     $this->db->table('projects')->where('project_id', $projectId)->update($data);
 }
 
+public function insertSEOProject($data)
+{
+    // Insert SEO project data into the database
+    return $this->db->table('seo_projects')->insert($data);
+}
+/*public function getSEOProjects()
+{
+    // Fetch SEO projects data from the database
+    return $this->db->table('seo_projects')->get()->getResultArray();
+}*/
+
+public function getSEOProjects()
+{
+    return $this->db->table('seo_projects')
+                    ->select('seo_projects.*, seo_projects.project_name')
+                    ->join('projects', 'projects.project_id = seo_projects.project_id')
+                    ->get()
+                    ->getResultArray();
+}
+
+public function get_client_data()
+{
+    return $this->db->table('clients')
+                    //->where('is_deleted', 0) // Filter out deleted clients
+                    ->get()
+                    ->getResultArray();
+}
 
 
 }

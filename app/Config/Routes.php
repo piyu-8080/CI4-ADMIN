@@ -100,7 +100,6 @@ $routes->get('change_status1/(:num)/(:any)', 'Home::change_status1/$1/$2');
 
 $routes->get('SEO_projects','Home::SEO_projects');
 
-
 $routes->get('add_seo_projects','Home::add_seo_projects');
 
 $routes->post('add_seo_projects','Home::add_seo_projects');
