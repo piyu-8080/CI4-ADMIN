@@ -165,6 +165,9 @@ public function updateStatus1($projectId, $status)
     $this->db->table('projects')->where('project_id', $projectId)->update($data);
 }
 
+
+//-----------------------------------Insert SEO project-----------------------------------------------------------//
+
 public function insertSEOProject($data)
 {
     // Check if the 'project_id' key exists in the provided data
@@ -183,6 +186,9 @@ public function insertSEOProject($data)
     // Fetch SEO projects data from the database
     return $this->db->table('seo_projects')->get()->getResultArray();
 }*/
+
+
+//--------------------------------------Display data fetched from database seo projects-----------------------------------------------------------//
 
 public function getSEOProjects()
 {
