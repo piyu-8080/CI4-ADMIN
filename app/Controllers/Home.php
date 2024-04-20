@@ -502,26 +502,24 @@ public function SEO_projects()
     return view('SEO_projects', $data);
 }
 
+//-----------------------------------Add SEO projects list-----------------------------------------------------------//
 
 
 public function add_seo_projects()
 {
-    // Load the CompanyModel
-    $companyModel = new \App\Models\CompanyModel();
-
     // Fetch projects data from the database
-    $projects = $companyModel->getProjects(); // Assuming you have a method to fetch projects
-
+    $projects = $this->CompanyModel->getProjects();
+    
     // Check if the form is submitted
     if ($this->request->getMethod() === 'post') {
         // Define validation rules
         $rules = [
             'project_id' => 'required', 
-            'project_name' => 'required',// Assuming project_id is required
+            'project_name' => 'required', // Ensure project_name is required
             'seo_title' => 'required',
             'seo_description' => 'required',
             'description' => 'required',
-            'progress' => 'required|in_list[0,1,2]' // Assuming progress is required and should be one of 0, 1, or 2
+            'progress' => 'required|in_list[0,1,2]' // Ensure progress is required and one of 0, 1, or 2
             // Add more validation rules as needed
         ];
     
@@ -542,7 +540,7 @@ public function add_seo_projects()
             ];
         
             // Insert SEO project data into the database
-            $inserted = $companyModel->insertSEOProject($data); // Assuming you have a method to insert SEO projects
+            $inserted = $this->CompanyModel->insertSEOProject($data);
     
             if ($inserted) {
                 // Redirect to the SEO projects list page if insertion is successful
@@ -560,6 +558,7 @@ public function add_seo_projects()
         return view('add_seo_projects', ['projects' => $projects]);
     }
 }
+
 
 
 

@@ -96,13 +96,15 @@ $routes->get('delete_project/(:num)', 'Home::delete_project/$1');
 
 $routes->get('change_status1/(:num)/(:any)', 'Home::change_status1/$1/$2');
 
-//-------------------------SEO project -------------------------------------//
+//-------------------------SEO project list-------------------------------------//
 
 $routes->get('SEO_projects','Home::SEO_projects');
 
-$routes->get('add_seo_projects','Home::add_seo_projects');
+//---------------------------- Get & Post method of Add SEO project -------------------------------------//
 
-$routes->post('add_seo_projects','Home::add_seo_projects');
+$routes->get('add_seo_projects','Home::add_seo_projects');
+$routes->post('addseoprojects', 'Home::add_seo_projects');
+
 
 
 

@@ -97,14 +97,24 @@ public function insertProject($data)
 //-------------------------------------fetch data from projects table of database-----------------------------------------------------------//
 
 // Get all projects with client name
-public function getProjects()
+/*public function getProjects()
 {
     return $this->db->table('projects')
                     ->select('projects.*, clients.client_name')
                     ->join('clients', 'clients.client_id = projects.client_id')
                     ->get()
                     ->getResultArray();
+}*/
+public function getProjects()
+{
+    return $this->db->table('projects')
+                    ->select('projects.*, clients.client_name')
+                    ->join('clients', 'clients.client_id = projects.client_id')
+                    ->where('projects.is_deleted', 0) // Adding condition for not deleted projects
+                    ->get()
+                    ->getResultArray();
 }
+
 
 // Get project details by ID
 public function getProjectById($projectId)
@@ -130,11 +140,21 @@ public function getClients()
 }
 
 //-----------------------------------Delete project of clients-----------------------------------------------------------//
-
+/*
 public function deleteProject($projectId)
 {
     return $this->db->table('projects')->where('project_id', $projectId)->delete();
+}*/
+
+public function deleteProject($projectId)
+{
+    // Update the 'is_deleted' field to mark the client as deleted
+    $data = ['is_deleted' => 1];
+    
+    // Perform the update operation
+    return $this->db->table('projects')->where('project_id', $projectId)->update($data);
 }
+
 
 //-----------------------------------Update status of project list table-----------------------------------------------------------//
 
@@ -147,9 +167,17 @@ public function updateStatus1($projectId, $status)
 
 public function insertSEOProject($data)
 {
+    // Check if the 'project_id' key exists in the provided data
+    if (!isset($data['project_id'])) {
+        // If 'project_id' key is not provided, return false or throw an error
+        return false; // You can also throw an exception here if you want
+    }
+
     // Insert SEO project data into the database
     return $this->db->table('seo_projects')->insert($data);
 }
+
+
 /*public function getSEOProjects()
 {
     // Fetch SEO projects data from the database
