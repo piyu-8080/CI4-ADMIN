@@ -39,7 +39,8 @@
             <h6 class="collapse-header">Company Management:</h6>
             <a class="collapse-item" href="<?php echo site_url()?>company_details">List company</a>
             <a class="collapse-item" href="<?php echo site_url()?>clients_list">List of Clients</a>
-            <a class="collapse-item" href="<?php echo site_url()?>project">List of Project</a>
+            <a class="collapse-item" href="<?php echo site_url()?>projects_list">List of Project</a>
+            <a class="collapse-item" href="<?php echo site_url()?>SEO_projects">List of SEO Project</a>
         </div>
     </div>
 </li>

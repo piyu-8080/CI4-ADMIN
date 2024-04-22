@@ -176,12 +176,13 @@ class Home extends BaseController
     return view('change_password');
 }
 
-
-
 public function forgot_password(): string
 {
     return view('forgot_password');
 }
+
+//-------------------------------------------------Display list of Clients-----------------------------------------------------------//
+
 public function clients_list()
 {
   //  $companyModel = new \App\Models\CompanyModel(); // Load the CompanyModel
@@ -189,6 +190,9 @@ public function clients_list()
 
     return view('clients_list', $data); // Pass the data to the view
 }
+
+
+//------------------------------------------Add Clients data in form-----------------------------------------------------------------//
 
 public function add_clients()
 {
@@ -238,7 +242,7 @@ public function add_clients()
 }
    
 
-    
+//-------------------------------------------Change status of clients list table-----------------------------------------------------------//
     
 
 public function change_status($clientId, $status)
@@ -250,6 +254,7 @@ public function change_status($clientId, $status)
     return redirect()->to(site_url('clients_list'));
 }
 
+//---------------------------------------------------------Edit clients information -----------------------------------------------------------//
 
 public function edit_client($clientId)
 {
@@ -266,6 +271,7 @@ public function edit_client($clientId)
     }
 }
 
+//-----------------------------------------Update clients information-----------------------------------------------------------//
 
 public function updateClient($clientId)
 {
@@ -299,6 +305,11 @@ public function updateClient($clientId)
         return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
     }
 }
+
+
+
+//--------------------------------------------Delete Client from clients list-----------------------------------------------------------//
+
 public function delete_client($clientId)
 {
     try {
@@ -329,31 +340,224 @@ public function delete_client($clientId)
     }
 }
 
+//---------------------------------------------------Display Project list------------------------------------------------------------//
 
 
+public function projects_list(): string
+{
+    // Load CompanyModel
+    $companyModel = new CompanyModel();
 
+    // Fetch all projects from the database
+    $data['projects'] = $companyModel->getProjects();
+    $data['list_project'] = $companyModel->get_client_data();
+   // print_r($list_data); die;
+    
+    // Pass the fetched data to the view
+    return view('projects_list', $data);
+}
 
+//-------------------------------------------Add project of specific clients-----------------------------------------------------------//
 
-
-
-
-public function project(): string
+    public function add_projects()
     {
-        return view('project');
+        // Fetch clients data from the database
+        $clients = $this->CompanyModel->getclient();
+        
+        // Check if the form is submitted
+        if ($this->request->getMethod() === 'post') {
+            // Define validation rules
+            $rules = [
+                'project_name' => 'required',
+                'client_id' => 'required', // Ensure client_id is required
+                'project_start_date' => 'required|valid_date',
+                'status' => 'required|in_list[active,inactive]',
+                // Add more validation rules as needed
+            ];
+        
+            // Set validation rules
+            $this->validation->setRules($rules);
+        
+            // Validate the form input
+            if ($this->validation->withRequest($this->request)->run()) {
+                // Form validation passed, retrieve form input data
+                $data = [
+                    'project_name' => $this->request->getPost('project_name'),
+                    'client_id' => $this->request->getPost('client_id'), // Get client ID
+                    'project_start_date' => $this->request->getPost('project_start_date'),
+                    'status' => $this->request->getPost('status'),
+                    // Retrieve more form input data as needed
+                ];
+        
+                // Insert project data into the database
+                $inserted = $this->CompanyModel->insertProject($data);
+        
+                if ($inserted) {
+                    // Redirect to the projects list page if insertion is successful
+                    return redirect()->to(site_url('projects_list'));
+                } else {
+                    // Redirect back to the add projects form if insertion fails
+                    return redirect()->to(site_url('add_projects'));
+                }
+            } else {
+                // Form validation failed, redirect back to the form with validation errors
+                return redirect()->back()->withInput()->with('validation_errors', $this->validation->getErrors());
+            }
+        } else {
+            // If accessed directly, load the add projects form view with clients data
+            return view('add_projects', ['clients' => $clients]);
+        }
+    }
+    
+//--------------------------------------Edit project information of clients-----------------------------------------------------------//
+
+    public function edit_project($projectId)
+    {
+        // Load the CompanyModel
+        $companyModel = new \App\Models\CompanyModel();
+    
+        // Get the project details by ID
+        $project = $companyModel->getProjectById($projectId);
+    
+        // Check if the project data exists
+        if ($project) {
+            // Get the clients list
+            $clients = $companyModel->getClients();
+    
+            // Load the edit project view and pass the project data and clients list
+            return view('edit_project', ['project' => $project, 'clients' => $clients]);
+        } else {
+            // Project data not found, redirect to an error page or appropriate action
+            return redirect()->to(site_url('error404'));
+        }
+    }
+    
+//------------------------------------------update project of clients-----------------------------------------------------------//
+
+    public function update_project($projectId)
+    {
+        $rules = [
+            'project_name' => 'required',
+            'client_id' => 'required',
+            'project_start_date' => 'required|valid_date',
+            'status' => 'required|in_list[active,inactive]'
+            // Add more validation rules as needed
+        ];
+
+        if ($this->validate($rules)) {
+            $data = [
+                'project_name' => $this->request->getPost('project_name'),
+                'client_id' => $this->request->getPost('client_id'),
+                'project_start_date' => $this->request->getPost('project_start_date'),
+                'status' => $this->request->getPost('status'),
+                // Retrieve more form input data as needed
+            ];
+
+            $this->CompanyModel->updateProject($projectId, $data);
+
+            return redirect()->to(site_url('projects_list'))->with('success_message', 'Project updated successfully.');
+        } else {
+            return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
+        }
     }
 
-    public function add_projects(): string
-    {
-        return view('add_projects');
+//--------------------------------------Delete project of specific clients-----------------------------------------------------------//
+   
+    public function delete_project($projectId)
+{
+    $companyModel = new \App\Models\CompanyModel();
+    $deleted = $companyModel->deleteProject($projectId);
+    
+    if ($deleted) {
+        // Project deleted successfully
+        return redirect()->to(site_url('projects_list'))->with('success', 'Project deleted successfully');
+    } else {
+        // Failed to delete project
+        return redirect()->to(site_url('projects_list'))->with('error', 'Failed to delete project');
     }
+}
+
+//-----------------------------------Change status of project list table-----------------------------------------------------------//
+
+public function change_status1($projectId, $status)
+{
+    // Call the updateStatus method in your CompanyModel
+    $this->CompanyModel->updateStatus1($projectId, $status);
+
+    // Redirect back to the projects list page or any other appropriate page
+    return redirect()->to(site_url('projects_list'));
+}
+
+//-----------------------------------SEO projects list-----------------------------------------------------------//
+
+public function SEO_projects()
+{
+    // Load the CompanyModel
+    $companyModel = new \App\Models\CompanyModel();
+
+    // Fetch SEO projects data from the database
+    $data['projects'] = $companyModel->getSEOProjects();
+
+    // Load the SEO_projects view with the fetched data
+    return view('SEO_projects', $data);
+}
+
+//-----------------------------------Add SEO projects list-----------------------------------------------------------//
 
 
-
-
-
-
-
-
+public function add_seo_projects()
+{
+    // Fetch projects data from the database
+    $projects = $this->CompanyModel->getProjects();
+    
+    // Check if the form is submitted
+    if ($this->request->getMethod() === 'post') {
+        // Define validation rules
+        $rules = [
+            'project_id' => 'required', 
+            'project_name' => 'required', // Ensure project_name is required
+            'seo_title' => 'required',
+            'seo_description' => 'required',
+            'description' => 'required',
+            'progress' => 'required|in_list[0,1,2]' // Ensure progress is required and one of 0, 1, or 2
+            // Add more validation rules as needed
+        ];
+    
+        // Set validation rules
+        $this->validation->setRules($rules);
+    
+        // Validate the form input
+        if ($this->validation->withRequest($this->request)->run()) {
+            // Form validation passed, retrieve form input data
+            $data = [
+                'project_id' => $this->request->getPost('project_id'),
+                'project_name' => $this->request->getPost('project_name'),
+                'seo_title' => $this->request->getPost('seo_title'),
+                'seo_description' => $this->request->getPost('seo_description'),
+                'description' => $this->request->getPost('description'),
+                'progress' => $this->request->getPost('progress'),
+                // Retrieve more form input data as needed
+            ];
+        
+            // Insert SEO project data into the database
+            $inserted = $this->CompanyModel->insertSEOProject($data);
+    
+            if ($inserted) {
+                // Redirect to the SEO projects list page if insertion is successful
+                return redirect()->to(site_url('SEO_projects'));
+            } else {
+                // Redirect back to the add SEO projects form if insertion fails
+                return redirect()->to(site_url('add_seo_projects'));
+            }
+        } else {
+            // Form validation failed, redirect back to the form with validation errors
+            return redirect()->back()->withInput()->with('validation_errors', $this->validation->getErrors());
+        }
+    } else {
+        // If accessed directly, load the add SEO projects form view with projects data
+        return view('add_seo_projects', ['projects' => $projects]);
+    }
+}
 
 
 
