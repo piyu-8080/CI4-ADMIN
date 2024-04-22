@@ -4,24 +4,7 @@
 <head>
 
 <?php include('header_script.php');?>
-<style>
-    #searchInput {
-    background-color: #f8f9fc; /* Light gray background */
-    border: 1px solid #d1d3e2; /* Light border color */
-    border-radius: 5px; /* Rounded corners */
-    padding: 8px 12px; /* Padding inside the input */
-    font-size: 14px; /* Font size */
-    width: 200px; /* Adjust width as needed */
-    transition: border-color 0.3s, box-shadow 0.3s;/* Smooth transition for border and box shadow */
-    margin-top: -20px; 
-}
 
-#searchInput:focus {
-    border-color: #4e73df; /* Border color on focus */
-    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25); /* Box shadow on focus */
-}
-
-    </style>
 </head>
 
 <body id="page-top">
