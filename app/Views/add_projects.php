@@ -3,21 +3,7 @@
 
 <head>
     <?php include('header_script.php'); ?>
-    <style>
-        .col-lg-7 {
-            margin-left: 155px;
-            margin-top: 70px;
-        }
-
-        .p-5 {
-            width: 1000px;
-            box-shadow: 1px 2px 6px 1px;
-        }
-
-        .text-danger {
-            color: red; /* Style for error messages */
-        }
-    </style>
+    <link href="<?php echo site_url(); ?>public/assets/css/search.css" rel="stylesheet">
 </head>
 
 <body id="page-top">

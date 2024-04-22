@@ -4,7 +4,7 @@
 <head>
 
 <?php include('header_script.php');?>
-
+<link href="<?php echo site_url(); ?>public/assets/css/search.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
