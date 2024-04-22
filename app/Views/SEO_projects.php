@@ -4,6 +4,24 @@
 <head>
 
 <?php include('header_script.php');?>
+<style>
+    #searchInput {
+    background-color: #f8f9fc; /* Light gray background */
+    border: 1px solid #d1d3e2; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Padding inside the input */
+    font-size: 14px; /* Font size */
+    width: 200px; /* Adjust width as needed */
+    transition: border-color 0.3s, box-shadow 0.3s;/* Smooth transition for border and box shadow */
+    margin-top: -20px; 
+}
+
+#searchInput:focus {
+    border-color: #4e73df; /* Border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25); /* Box shadow on focus */
+}
+
+    </style>
 </head>
 
 <body id="page-top">
@@ -30,8 +48,8 @@
 
                     <!-- Page Heading -->
                     <a href="<?php echo site_url()?>add_seo_projects" class="btn my-2 btn-primary float-right">
-    Add SEO Projects
-</a>
+                        Add SEO Projects
+                    </a>
 
                     <h1 class="h3 mb-2 text-gray-800">SEO project list</h1>
                     
@@ -41,7 +59,8 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">List of SEO Projects</h6>
-                            
+                            <input type="text" id="searchInput" class="float-right bg-light border-1 small" placeholder="Search for..."
+                        aria-label="Search" aria-describedby="basic-addon2">
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -54,23 +73,21 @@
                                             <th>SEO_Work_Discription</th>
                                             <th>Discription</th>
                                             <th>Progress</th>
-                                            
                                         </tr>
                                     </thead>
-<!-- View - clients_list.php -->
-<tbody>
-    <?php foreach ($projects as $project): ?>
-        <tr>
-            <td><?php echo $project['id']; ?></td>
-            <td><?php echo $project['project_name']; ?></td>
-
-            <td><?php echo $project['seo_title']; ?></td>
-            <td><?php echo $project['seo_description']; ?></td>
-            <td><?php echo $project['description']; ?></td>
-            <td><?php echo $project['progress']; ?></td>
-        </tr>
-    <?php endforeach; ?>
-</tbody>
+                                    <!-- View - clients_list.php -->
+                                    <tbody>
+                                        <?php foreach ($projects as $project): ?>
+                                            <tr>
+                                                <td><?php echo $project['id']; ?></td>
+                                                <td><?php echo $project['project_name']; ?></td>
+                                                <td><?php echo $project['seo_title']; ?></td>
+                                                <td><?php echo $project['seo_description']; ?></td>
+                                                <td><?php echo $project['description']; ?></td>
+                                                <td><?php echo $project['progress']; ?></td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -83,13 +100,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+            <?php include('footer.php');?>
             <!-- End of Footer -->
 
         </div>
@@ -122,7 +133,9 @@
             </div>
         </div>
     </div>
-   
+
+
+<?php include('footer_script.php');?>
 </body>
 
 </html>
