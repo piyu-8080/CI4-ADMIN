@@ -40,6 +40,8 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">List of Client Projects</h6>
+                            <input type="text" id="searchInput" class="float-right bg-light border-1 small" placeholder="Search for..."
+                        aria-label="Search" aria-describedby="basic-addon2">
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -111,13 +113,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+            <?php include('footer.php');?>
             <!-- End of Footer -->
 
         </div>
@@ -152,7 +148,7 @@
     </div>
   
     <?php include('footer_script.php');?>
-
+   
 </body>
 
 </html>

@@ -14,3 +14,4 @@
 
     <!-- Custom styles for this template-->
     <link href="<?php echo site_url(); ?>public/assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?php echo site_url(); ?>public/assets/css/search.css" rel="stylesheet">
