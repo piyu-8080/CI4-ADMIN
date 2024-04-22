@@ -1,4 +1,366 @@
+<<<<<<< HEAD
 WARNING - 2024-04-22 04:49:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+=======
+WARNING - 2024-04-22 06:22:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 06:22:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+>>>>>>> 900d009cb6038a5ae29aae2d908758358f78a0c0
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:04:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:04:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 05:04:44 --> mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist in C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_pro...', 0)
+#1 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_pro...')
+#2 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_pro...')
+#3 C:\wamp64\www\CI4-ADMIN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_pro...', Array, false)
+#4 C:\wamp64\www\CI4-ADMIN\app\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\CI4-ADMIN\app\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+#6 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+#7 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\CI4-ADMIN\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 05:04:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 2 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:04:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 4 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:04:44 --> [Caused by] mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 5 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:09:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 05:09:28 --> mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist in C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_pro...', 0)
+#1 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_pro...')
+#2 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_pro...')
+#3 C:\wamp64\www\CI4-ADMIN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_pro...', Array, false)
+#4 C:\wamp64\www\CI4-ADMIN\app\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\CI4-ADMIN\app\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+#6 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+#7 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\CI4-ADMIN\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 05:09:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 2 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:09:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 4 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:09:28 --> [Caused by] mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 5 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:09:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 05:09:31 --> mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist in C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_pro...', 0)
+#1 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_pro...')
+#2 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_pro...')
+#3 C:\wamp64\www\CI4-ADMIN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_pro...', Array, false)
+#4 C:\wamp64\www\CI4-ADMIN\app\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\CI4-ADMIN\app\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+#6 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+#7 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\CI4-ADMIN\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 05:09:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 2 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:09:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 4 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:09:31 --> [Caused by] mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 5 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:09:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:09:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 05:09:49 --> mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist in C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\CI4-ADMIN\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_pro...', 0)
+#1 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_pro...')
+#2 C:\wamp64\www\CI4-ADMIN\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_pro...')
+#3 C:\wamp64\www\CI4-ADMIN\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_pro...', Array, false)
+#4 C:\wamp64\www\CI4-ADMIN\app\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\CI4-ADMIN\app\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+#6 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+#7 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\CI4-ADMIN\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\CI4-ADMIN\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 05:09:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 2 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:09:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 4 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 05:09:49 --> [Caused by] mysqli_sql_exception: Table 'ci4-admin.seo_projects' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `seo_projects`.*, `seo_projects`.`project_name`
+FROM `seo_projects`
+JOIN `projects` ON `projects`.`project_id` = `seo_projects`.`project_id`', [], false)
+ 5 APPPATH\Models\CompanyModel.php(198): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(499): App\Models\CompanyModel->getSEOProjects()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->SEO_projects()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:20:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 05:21:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 05:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 05:21:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 05:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 05:21:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 05:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 05:21:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 05:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 05:21:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 05:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 05:22:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 05:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 07:40:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 07:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 07:41:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 07:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 07:41:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 07:41:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 07:41:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-04-22 07:42:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 07:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-22 07:42:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$CompanyModel is deprecated in APPPATH\Controllers\Home.php on line 23.
  1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Home->__construct()
  2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)

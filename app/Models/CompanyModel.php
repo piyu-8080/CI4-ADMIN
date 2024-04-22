@@ -199,6 +199,8 @@ public function getSEOProjects()
                     ->getResultArray();
 }
 
+//-----------------------------------Update status of project list table-----------------------------------------------------------//
+
 public function get_client_data()
 {
     return $this->db->table('clients')
