@@ -45,6 +45,56 @@
     </div>
 </li>
 
+<!-- Nav Item - Utilities Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseExtra"
+        aria-expanded="true" aria-controls="collapseExtra">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Client Management</span>
+    </a>
+    <div id="collapseExtra" class="collapse" aria-labelledby="headingExtra"
+        data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Client Details:</h6>
+            <a class="collapse-item" href="<?php echo site_url()?>clients_list">List of Clients</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+</li>
+
+<!-- Nav Item - Utilities Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseExtra1"
+        aria-expanded="true" aria-controls="collapseExtra1">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Project Management</span>
+    </a>
+    <div id="collapseExtra1" class="collapse" aria-labelledby="headingExtra"
+        data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Project Details:</h6>
+            <a class="collapse-item" href="<?php echo site_url()?>projects_list">List of Project</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+</li>
+
+<!-- Nav Item - Utilities Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseExtra2"
+        aria-expanded="true" aria-controls="collapseExtra2">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>SEO Project Management</span>
+    </a>
+    <div id="collapseExtra2" class="collapse" aria-labelledby="headingExtra"
+        data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">SEO Project Details:</h6>
+            <a class="collapse-item" href="<?php echo site_url()?>SEO_projects">List of SEO Project</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+</li>
 
 
 
@@ -67,6 +117,9 @@
         </div>
     </div>
 </li>
+
+
+
 
 <!-- Divider -->
 <hr class="sidebar-divider">
@@ -102,6 +155,7 @@
     <a class="nav-link" href="<?php echo site_url()?>charts">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Charts</span></a>
+        
 </li>
 
 <!-- Nav Item - Tables -->

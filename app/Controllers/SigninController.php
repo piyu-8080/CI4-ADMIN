@@ -69,47 +69,51 @@ class SigninController extends Controller
 
 //-----------------------------------After edit it will update data-----------------------------------------------------------//
 
-    public function update($id)
-    {
-        // Validate incoming data if necessary
+public function update($id)
+{
+    // Load the UserModel
+    $userModel = new UserModel();
 
-        // Load the UserModel
-        $userModel = new UserModel();
+    // Check if the user with the given ID exists
+    $user = $userModel->find($id);
 
-        // Check if the user with the given ID exists
-        $user = $userModel->find($id);
-
-        // If the user does not exist, return a response or redirect
-        if (!$user) {
-            return redirect()->to('error404'); // Redirect to a 404 error page
-        }
-
-        // Handle POST request (update data)
-        if ($this->request->getMethod() === 'post') {
-            // Get the updated data from the form
-            $updatedData = [
-                'firstname' => $this->request->getPost('firstname'),
-                'lastname' => $this->request->getPost('lastname'),
-                'email' => $this->request->getPost('email'),
-                
-            ];
-
-            
-
-            // Update the user record in the database
-            $userModel->update($id, $updatedData);
-
-            // Redirect to a success page or show a success message
-            return redirect()->to('tables'); 
-        }
-
-        // Handle GET request (display form)
-       
-        $data['user'] = $user;
-
-        // Load the edit view with the user data
-        return view('edit', $data);
+    // If the user does not exist, return a response or redirect
+    if (!$user) {
+        return redirect()->to('error404'); // Redirect to a 404 error page
     }
+
+    // Handle POST request (update data)
+    if ($this->request->getMethod() === 'post') {
+        // Get the updated data from the form
+        $updatedData = [
+            'firstname' => $this->request->getPost('firstname'),
+            'lastname' => $this->request->getPost('lastname'),
+            'email' => $this->request->getPost('email'),
+        ];
+
+        // Check if a new password is provided
+        $newPassword = $this->request->getPost('password');
+        if (!empty($newPassword)) {
+            // Hash the new password
+            $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+            $updatedData['password'] = $hashedPassword;
+        }
+
+        // Update the user record in the database
+        $userModel->update($id, $updatedData);
+
+        // Redirect to a success page or show a success message
+        return redirect()->to('tables')->with('success', 'User updated successfully.'); 
+    }
+
+    // Handle GET request (display form)
+   
+    $data['user'] = $user;
+
+    // Load the edit view with the user data
+    return view('edit', $data);
+}
+
 
 //-----------------------------------Delete the registered data from tables-----------------------------------------------------------//
 
