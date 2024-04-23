@@ -60,14 +60,23 @@
                                     </thead>
                                     <!-- View - clients_list.php -->
                                     <tbody>
-                                        <?php foreach ($projects as $project): ?>
+                                        <?php 
+                                        // Define progress mapping
+                                        $progressNames = array(
+                                            '0' => 'Not Started',
+                                            '1' => 'In Progress',
+                                            '2' => 'Completed'
+                                        );
+
+                                        // Loop through projects
+                                        foreach ($projects as $project): ?>
                                             <tr>
                                                 <td><?php echo $project['id']; ?></td>
                                                 <td><?php echo $project['project_name']; ?></td>
                                                 <td><?php echo $project['seo_title']; ?></td>
                                                 <td><?php echo $project['seo_description']; ?></td>
                                                 <td><?php echo $project['description']; ?></td>
-                                                <td><?php echo $project['progress']; ?></td>
+                                                <td><?php echo $progressNames[$project['progress']]; ?></td> <!-- Display progress name -->
                                             </tr>
                                         <?php endforeach; ?>
                                     </tbody>
