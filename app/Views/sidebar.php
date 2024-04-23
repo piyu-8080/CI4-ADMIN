@@ -109,6 +109,15 @@
     <a class="nav-link" href="<?php echo site_url()?>tables">
         <i class="fas fa-fw fa-table"></i>
         <span>Tables</span></a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Company Management:</h6>
+            <a class="collapse-item" href="<?php echo site_url()?>company_details">List company</a>
+            <a class="collapse-item" href="<?php echo site_url()?>clients_list">List of Clients</a>
+            <a class="collapse-item" href="<?php echo site_url()?>projects_list">List of Project</a>
+            <a class="collapse-item" href="<?php echo site_url()?>SEO_projects">List of SEO Project</a>
+        </div>
+    </div>
 </li>
 
 <!-- Divider -->
@@ -120,10 +129,10 @@
 </div>
 
 <!-- Sidebar Message -->
-<div class="sidebar-card d-none d-lg-flex">
-    <img class="sidebar-card-illustration mb-2" src="public/assets/img/undraw_rocket.svg" alt="...">
-    <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-    <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-</div>
+<!-- <div class="sidebar-card d-none d-lg-flex">
+    <img class="sidebar-card-illustration mb-2" src="public/assets/img/undraw_rocket.svg" alt="..."> -->
+    <!-- <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p> -->
+    <!-- <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a> -->
+<!-- </div> --> 
 
 </ul>
